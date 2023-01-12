@@ -1,0 +1,230 @@
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,
+p,
+ol,ul,
+span,
+small{
+    padding: 0;
+    margin: 0;
+}
+ol,ul{
+    list-style-type: none;
+}
+a,a:hover{ 
+    text-decoration: none;
+}
+
+
+#nav{
+    background-color: #02918c;
+}
+
+#nav #main_menu ul li a{
+    font-size: 12px;
+    font-weight: 800;
+    color: #ffffff;
+    transition: all .1s linear;
+    text-transform: uppercase;
+}
+#nav #main_menu ul li:hover a {
+    color: yellow;
+}
+
+
+
+#banner .banner_slider_item{
+    height: 728px;
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative;
+    z-index: 1;
+}
+#banner .banner_slider_item::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.66);
+    z-index: -1;
+}
+#banner .bannercontant{
+    color: #ffffff;
+}
+#banner .bannercontant h4{
+    font-size: 30px;
+    font-weight: 400;
+}
+#banner .bannercontant h1{
+    font-size: 68px;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+}
+#banner .bannercontant p{
+    font-size: 18px;
+}
+#banner .bannercontant img {
+    display: block;
+    margin: 52px auto;
+}
+#banner .bannercontant a{
+    font-size: 14px;
+    letter-spacing: 4px;
+    color: #0b1016;
+    text-transform: uppercase;
+    padding: 14px 42px;
+    font-weight: 800;
+    background-color: #cfc91d;
+    line-height: 24px;
+}
+
+
+#about {
+    padding: 98px 0;
+}
+#about .sec-info h2 {
+    color: #02918c;
+    font-size: 46px;
+}
+
+#about .sec-info p {
+    color: #7e8287;
+    font-size: 12px;
+    line-height: 41px;
+}
+
+#about .sec-info p span {
+    font-size: 23px;
+    font-weight: 800;
+}
+#about .about_item_container{
+    margin-top: 75px;
+}
+#about .about_item{
+    color: #7e8287;
+    border-right: 1px solid #d9dbdb;
+    padding: 37px 40px;
+}
+#about .about_item:last-child {
+    border: transparent;
+}
+#about .about_item h5 {
+    font-size: 16px;
+    margin: 20px;
+
+}
+#about .about_item p {
+    font-size: 11px;
+    line-height: 21px;
+}
+#service{
+    padding: 65px 0;
+    background-image: url(../img/bc.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#service .service-item{
+    margin-top: 30px;
+    padding-right: 80px;
+}
+#service .service-item h5{
+    font-size: 16px;
+    margin: 10px 0;
+}
+#service .service-item p{
+    font-size: 10px;
+    line-height: 15px;
+}  
+#work .sec-info{
+    padding: 109px;
+}
+#work .sec-info h2 {
+    color: #02918c;
+    font-size: 46px;
+}
+#work .sec-info p {
+    color: #7e8287;
+    font-size: 16px;
+    width: 600px;
+    margin: 0 auto;
+    line-height: 36px;
+}
+
+#work .work_item{
+    position: relative;
+}
+#work .work_item .overlay{
+    position: absolute;
+    background-color: rgba(2, 145, 140,0.85);
+    color: #ffffff;
+    inset: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s linear;
+}
+#work .work_item:hover .overlay{
+    opacity: 1;
+    visibility: visible;
+}
+
+#contact .sec-info h2 {
+    color: #02918c;
+    font-size: 46px;
+    padding: 70px;
+}
+
+#contact .sec-info p {
+    color: #7e8287;
+    font-size: 16px;
+    width: 680px;
+    margin: 0 auto;
+    line-height: 36px;
+}
+#contact .contact_form{
+    background-color: #0b0b0b;
+    padding: 50px;
+}
+#contact .contact_form input,
+#contact .contact_form textarea{
+        background: none;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #898989;
+        color: #797c81;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 18px;
+        margin-top: 50px;
+        font-size: 16px;
+}
+#contact .contact_form button{
+    margin: 50px 0;
+    font-size: 14px;
+    font-weight: 800;
+    background-color: #cfc91d;
+    color: #0b1016;
+    text-transform: uppercase;
+}
+.form-control:focus,
+input:focus,
+textarea:focus{
+    box-shadow: none;
+    background: none;
+    border-color: transparent;
+    outline: 0;
+}
+.form-control{
+    border: none;
+}
+
+.contact_form input{
+    background: none;
+}
